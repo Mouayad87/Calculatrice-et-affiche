@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Lire une valeur dans un champs de texte</title>
+<meta charset="utf-8">
+<style>
+#bouton {margin-top: 12px;}
+</style>
+<script>
+function afficher(){
+var saisie =document.getElementById("texte1").value;
+document.getElementById("texte2").value=saisie ;
+}
+</script>
+<body> 
+<div align="center">
+<h3>Afficher une valeur dans un autre champs de texte</h3>
+<form>
+<input type="text" id="texte1"  value="" size="30"><br>
+<input type="button" id="bouton" value="Afficher" size="30" onclick="afficher()"><br><br>
+<input type="text" id="texte2"  size="30" value="">
+
+</form>
+</div>
+</body>
+</html>
